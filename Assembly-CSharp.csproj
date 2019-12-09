@@ -63,7 +63,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\1\Gracz.cs" />
+    <Compile Include="Assets\1\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\1\Scripts\Gracz.cs" />
+    <Compile Include="Assets\1\Scripts\Random_platform.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>E:/OneDrive - Politechnika Łódzka/DNS/HueTower/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
