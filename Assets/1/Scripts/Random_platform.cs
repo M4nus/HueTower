@@ -20,7 +20,7 @@ public class Random_platform : MonoBehaviour
     {
 
         Vector3 spawnPosition = new Vector3();
-
+        
         for (int i = 0; i < numberOfPlatforms; i++)
         {
 
