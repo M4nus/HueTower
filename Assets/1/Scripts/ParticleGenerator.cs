@@ -12,7 +12,6 @@ public class ParticleGenerator : MonoBehaviour
     float generationParticleHeight;
     float usedCameraY;
     float lastGeneratedParticlePositionY;
-    int counter = 0;
     bool check = true;
 
 
@@ -34,7 +33,7 @@ public class ParticleGenerator : MonoBehaviour
             lastGeneratedParticlePositionY = newPosition.y;
             check = false;
         }
-        if (usedCameraY + generationParticleHeight > lastGeneratedParticlePositionY* early)
+        if (usedCameraY + generationParticleHeight > lastGeneratedParticlePositionY * early)
             check = false;
         else
             check = true;
