@@ -10,7 +10,7 @@ public class ParticleGenerator : MonoBehaviour
     public Transform usedCamera;
     public float early = 2.0f;
     float generationParticleHeight;
-    //float usedCameraY;
+    float usedCameraY;
     float lastGeneratedParticlePositionY;
     bool check = true;
 
@@ -25,15 +25,15 @@ public class ParticleGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //usedCameraY = usedCamera.position.y;
-        if (lastGeneratedParticlePositionY - gameObject.GetComponent<CameraScript>().usedCameraY <= generationParticleHeight * early)
+        usedCameraY = usedCamera.position.y;
+        if (lastGeneratedParticlePositionY - usedCameraY <= generationParticleHeight * early)
         {
             Vector3 newPosition = new Vector3(startingObject.transform.position.x, lastGeneratedParticlePositionY + generationParticleHeight, startingObject.transform.position.z);
             Instantiate(generationParticle, newPosition, Quaternion.identity);
             lastGeneratedParticlePositionY = newPosition.y;
             check = false;
         }
-        if (gameObject.GetComponent<CameraScript>().usedCameraY + generationParticleHeight > lastGeneratedParticlePositionY * early)
+        if (usedCameraY + generationParticleHeight > lastGeneratedParticlePositionY * early)
             check = false;
         else
             check = true;

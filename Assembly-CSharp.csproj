@@ -69,6 +69,7 @@
     <Compile Include="Assets\1\Scripts\Gracz.cs" />
     <Compile Include="Assets\1\Scripts\ParticleGenerator.cs" />
     <Compile Include="Assets\1\Scripts\Random_platform.cs" />
+    <Compile Include="Assets\1\Scripts\RandomPlatform.cs" />
     <Compile Include="Assets\1\Scripts\WorldGenerator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
